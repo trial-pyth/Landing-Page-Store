@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Serif Display", serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #111;
+  color: white;
+  padding: 20px 50px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+}
+
+.searchInput::placeholder {
+  color: lightgray;
+}
+
+.limitedOffer {
+  font-size: 20px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 300;
+}
+.slider {
+  overflow: hidden;
+}
+
+.sliderWrapper {
+  display: flex;
+  width: 500vw;
+  transition: all 1s ease-in-out;
+}
+
+.sliderItem {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  overflow: hidden;
+}
+
+.sliderBg {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.sliderImg {
+  z-index: -1;
+}
+
+.sliderTitle {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.sliderPrice {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  border: 1px solid gray;
+  z-index: 2;
+}
+
+.buyButton {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  border: 1px solid gray;
+  background-color: black;
+  z-index: 3;
+  cursor: pointer;
+  font-family: "Noto Serif Display", serif;
+}
+
+.buyButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marine-memorial {
+  height: 100vh;
+  display: flex;
+  background-color: #111;
+  overflow: hidden;
+}
+
+.memorialTextContainer {
+  flex: 2;
+  color: azure;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-memorial {
+  color: rgb(179, 179, 179);
+  font-size: 3vw;
+  margin: 50px;
+  cursor: default;
+}
+
+.text-memorial-details {
+  color: rgb(179, 179, 179);
+  font-size: 25px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+.text-memorial-button {
+  padding: 10px;
+  margin: 3vw;
+  font-family: "Noto Serif Display", serif;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid rgb(158, 158, 158);
+  color: rgb(203, 203, 203);
+  position: relative;
+  overflow: hidden;
+}
+
+.text-memorial-button::after {
+  content: "VIEW";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: 0;
+  left: +100%;
+  background-color: aqua;
+  transition: 0.5s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(203, 203, 203);
+}
+
+.text-memorial-button:hover.text-memorial-button::after {
+  transform: translateX(-100%);
+}
+
+.memorial-statue-img {
+  flex: 2;
+}
+
+.memorial-statue-dataImg {
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.medals {
+  height: 100vh;
+  display: flex;
+  background-color: rgb(63, 12, 12);
+  overflow: hidden;
+}
+
+.medalsImg {
+  flex: 5;
+}
+
+.medals-text-container {
+  flex: 2;
+}
+
+.text-medals {
+  display: flex;
+  color: rgb(255, 172, 172);
+  font-size: 3vw;
+  margin: 30px;
+  cursor: default;
+}
+
+.text-medals-details {
+  color: rgb(255, 172, 172);
+  font-size: 25px;
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+}
+
+.text-medal-button {
+  padding: 10px;
+  margin: 3vw;
+  width: 13%;
+  font-family: "Noto Serif Display", serif;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid rgb(255, 172, 172);
+  color: rgb(255, 172, 172);
+  position: relative;
+  overflow: hidden;
+}
+.text-medal-button::after {
+  content: "BUY";
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: rgb(63, 12, 12);
+  top: 0;
+  left: +100%;
+  background-color: rgb(255, 172, 172);
+  transition: 0.5s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-medal-button:hover.text-medal-button::after {
+  transform: translateX(-100%);
+}
+
+.enigma {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(53, 53, 53);
+  overflow: hidden;
+}
+
+.enigma-image-container {
+  flex: 2;
+  /* background-color: yellow; */
+}
+
+.eigma-dataImg {
+  width: 100%;
+  height: 100%;
+}
+
+.enigma-text-container {
+  flex: 5;
+  padding: 10vw;
+}
+
+.enigma-text {
+  font-size: 10vh;
+  color: rgb(128, 128, 128);
+}
+
+.product {
+  height: 100vh;
+  background-color: rgb(207, 207, 207);
+  position: relative;
+}
+
+.productImg {
+  width: 50%;
+  margin: 3%;
+  height: 80%;
+}
+
+.productDetails {
+  position: absolute;
+  top: 1%;
+  right: 0;
+  width: 40%;
+  padding: 40px;
+}
+
+.sizes {
+  display: flex;
+
+  justify-content: center;
+}
+.size {
+  padding: 5px 20px;
+  margin: 15px;
+  border: 1px solid rgb(50, 50, 50);
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+}
+
+.productButton {
+  float: right;
+  padding: 10px 35px;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+  font-family: "Noto Serif Display", serif;
+}
+
+.productButton:hover {
+  background-color: rgb(129, 129, 129);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fMenuList {
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+fListItem {
+  margin-bottom: 12px;
+  color: rgb(86, 86, 86);
+}
+
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fInput {
+  padding: 5px;
+}
+
+.fButton {
+  padding: 5px;
+  background-color: #111;
+  color: white;
+}
+
+.fIcons {
+  display: flex;
+}
+
+.fIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 12px;
+}

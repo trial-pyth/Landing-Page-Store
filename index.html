@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Times Store</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navTop">
+        <div class="navItem">
+          <span><b>TIMES & Co.</b></span>
+        </div>
+        <div class="navItem">
+          <div class="search">
+            <input type="text" placeholder="search" class="searchInput" />
+            <img
+              src="/img/search.png"
+              width="20"
+              height="20"
+              alt=""
+              class="searchIcon"
+            />
+          </div>
+        </div>
+        <div class="navItem">
+          <span class="limitedOffer">New Sale</span>
+        </div>
+      </div>
+      <div class="navBottom">
+        <span class="menuItem">
+          <h4>Britain WW2</h4>
+        </span>
+        <span class="menuItem">
+          <h4>Anti Aircraft</h4>
+        </span>
+        <span class="menuItem">
+          <h4>German Desert</h4>
+        </span>
+        <span class="menuItem">
+          <h4>Soviet Troops</h4>
+        </span>
+        <span class="menuItem">
+          <h4>Belgium Trench</h4>
+        </span>
+      </div>
+    </nav>
+    <div class="slider">
+      <div class="sliderWrapper">
+        <div class="sliderItem">
+          <img src="./img/britain-ww2.jpg" alt="" class="sliderImg" />
+          <div class="slideBg"></div>
+          <h1 class="sliderTitle">Britain under Blitz</h1>
+          <h2 class="sliderPrice">$10,000</h2>
+          <a href="#product">
+            <button class="buyButton">Purchase</button>
+          </a>
+        </div>
+        <div class="sliderItem">
+          <img src="./img/anti-aircraft.jpg" alt="" class="sliderImg" />
+          <div class="slideBg"></div>
+          <h1 class="sliderTitle">American Anti-Aircraft</h1>
+          <h2 class="sliderPrice">$8,890</h2>
+          <a href="#product">
+            <button class="buyButton">Purchase</button>
+          </a>
+        </div>
+        <div class="sliderItem">
+          <img src="./img/desert.jpg" alt="" class="sliderImg" />
+          <div class="slideBg"></div>
+          <h1 class="sliderTitle">German bombardment</h1>
+          <h2 class="sliderPrice">$8,000</h2>
+          <a href="#product">
+            <button class="buyButton">Purchase</button>
+          </a>
+        </div>
+        <div class="sliderItem">
+          <img src="./img/soviet.jpg" alt="" class="sliderImg" />
+          <div class="slideBg"></div>
+          <h1 class="sliderTitle">The Red Army</h1>
+          <h2 class="sliderPrice">$15,000</h2>
+          <a href="#product">
+            <button class="buyButton">Purchase</button>
+          </a>
+        </div>
+        <div class="sliderItem">
+          <img src="./img/trench.jpg" alt="" class="sliderImg" />
+          <div class="slideBg"></div>
+          <h1 class="sliderTitle">Belgium Trench</h1>
+          <h2 class="sliderPrice">$5,000</h2>
+          <a href="#product">
+            <button class="buyButton">Purchase</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <div class="parallax">
+        <!-- US MARINE MEMORIAL -->
+        <div class="marine-memorial">
+          <div class="memorialTextContainer">
+            <div class="text-memorial">Buy authentic sculpted collectibles</div>
+            <div class="text-memorial-details">
+              <p class="memorial-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                amet beatae sequi unde esse mollitia excepturi doloremque,
+                possimus soluta corrupti.
+              </p>
+            </div>
+            <button class="text-memorial-button">Learn More...</button>
+          </div>
+          <div class="memorial-statue-img">
+            <img
+              src="./img/marine-corps-removebg-preview.png"
+              alt=""
+              class="memorial-statue-dataImg"
+            />
+          </div>
+        </div>
+        <!-- DOCUMENTS -->
+        <div class="medals">
+          <div class="medals-image-container">
+            <div class="medals-img">
+              <img src="./img/medals.jpeg" alt="" class="medals-dataImg" />
+            </div>
+          </div>
+          <div class="medals-text-container">
+            <div class="text-medals">
+              Collect the honor of soldiers who fought for their country
+            </div>
+            <div class="text-medals-details">
+              <p class="medals-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus culpa accusantium blanditiis recusandae, nostrum nisi!
+              </p>
+            </div>
+            <div class="text-medal-button">Explore...</div>
+          </div>
+        </div>
+        <!-- ENIGMA -->
+        <div class="enigma">
+          <div class="enigma-image-container">
+            <div class="enigma-img">
+              <img src="./img/enigma.jpeg" alt="" class="enigma-dataImg" />
+            </div>
+          </div>
+          <div class="enigma-text-container">
+            <div class="enigma-text">Be close with world changing events</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of features and parallax -->
+
+    <div class="product" id="product">
+      <img src="./img/london-blitz.jpeg" alt="" class="productImg" />
+      <div class="productDetails">
+        <h1 class="productTitle">Authentic photos from London and blitz</h1>
+        <h2 class="productPrice">$10,000</h2>
+        <p class="productDesc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
+          dicta id autem consequuntur minus, officiis nesciunt blanditiis
+          mollitia necessitatibus, a non impedit dolor repudiandae.
+        </p>
+        <div class="sizes">
+          <div class="size">12"</div>
+          <div class="size">14"</div>
+          <div class="size">20"</div>
+        </div>
+        <button class="productButton">View Collection...</button>
+      </div>
+    </div>
+    <footer>
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h3 class="fMenuTitle">About Us</h3>
+          <ul class="fMenuList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Musuem</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h3 class="fMenuTitle">Useful Links</h3>
+          <ul class="fMenuList">
+            <li class="fListItem">Support</li>
+            <li class="fListItem">Refund</li>
+            <li class="fListItem">FAQ</li>
+            <li class="fListItem">Feedback</li>
+            <li class="fListItem">Stories</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h3 class="fMenuTitle">Products</h3>
+          <ul class="fMenuList">
+            <li class="fListItem">Luxury Items</li>
+            <li class="fListItem">Artifacts</li>
+            <li class="fListItem">Collectibles</li>
+            <li class="fListItem">Shipping</li>
+            <li class="fListItem">Complaints</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerRight">
+        <div class="footerRightMenu">
+          <h3 class="fMenuTitle">Subscribe to our Newsletter</h3>
+          <div class="fMail">
+            <input type="text" class="fInput" placeholder="your@email.com" />
+            <button class="fButton">Subscribe</button>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h3 class="fMenuTitle">Follow Us</h3>
+          <div class="fIcons">
+            <img src="./img/facebook.png" alt="" class="fIcon" />
+            <img src="./img/twitter.png" alt="" class="fIcon" />
+            <img src="./img/instagram.png" alt="" class="fIcon" />
+            <img src="./img/whatsapp.png" alt="" class="fIcon" />
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <span class="copyright">@ TIMES & Co. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
